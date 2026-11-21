@@ -372,10 +372,10 @@ function initScrollReveal() {
     { threshold: 0.12 }
   );
 
-  // Observe story paragraphs, section headings, collection specs, FAQ items
+  // Observe story paragraphs, section headings, collection metrics, FAQ items
   $$('.reveal, .story__body p, .story__heading, .story__pullquote,' +
      '.section__label, .section__heading, .section__sub,' +
-     '.collection__manifesto, .spec-card,' +
+     '.collection__lead, .metric-card,' +
      '.community__ig-link, .faq__item').forEach(el => {
     el.classList.add('reveal');
     observer.observe(el);

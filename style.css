@@ -648,103 +648,123 @@ ul, ol {
    ============================================================ */
 .collection {
   background: var(--color-bg);
+  padding-block: clamp(90px, 12vw, 150px);
 }
 
 .collection__inner {
   display: flex;
   flex-direction: column;
-  gap: clamp(24px, 4vw, 36px);
+  gap: clamp(40px, 6vw, 64px);
 }
 
-.collection__header {
+.collection__top {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
   gap: 16px;
-  flex-wrap: wrap;
+  max-width: 720px;
 }
 
-.collection__header .section__heading {
+.collection__meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.collection__meta .section__label {
   margin-bottom: 0;
 }
 
-.collection__badge {
+.collection__status-pill {
   font-family: var(--font-heading);
-  font-size: 0.62rem;
-  letter-spacing: 0.22em;
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-gold);
-  border: 1px solid var(--color-gold-dim);
-  padding: 4px 12px;
-  border-radius: 2px;
+  border: 1px solid rgba(200, 164, 90, 0.35);
   background: rgba(200, 164, 90, 0.08);
+  padding: 3px 10px;
+  border-radius: 2px;
 }
 
-.collection__manifesto {
-  font-size: clamp(1rem, 2.2vw, 1.15rem);
-  color: var(--color-text);
+.collection__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
   font-weight: 300;
-  line-height: 1.85;
-  max-width: 780px;
-  opacity: 0.9;
+  letter-spacing: var(--ls-heading);
+  text-transform: uppercase;
+  color: var(--color-text);
+  line-height: 1.05;
 }
 
-.collection__specs {
+.collection__lead {
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+}
+
+/* 3 Clean Horizontal Metric Cards */
+.collection__metrics {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: var(--gap);
-  margin-top: 8px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(16px, 3vw, 32px);
 }
 
-.spec-card {
+.metric-card {
   background: #0E0E0E;
-  border: 1px solid #222222;
+  border: 1px solid #202020;
   border-radius: 2px;
   padding: clamp(26px, 4vw, 36px);
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  gap: 16px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.02);
   transition: border-color var(--dur) var(--ease),
               transform var(--dur) var(--ease),
               box-shadow var(--dur) var(--ease);
 }
 
-.spec-card:hover {
+.metric-card:hover {
   border-color: var(--color-gold-dim);
   transform: translateY(-2px);
-  box-shadow: 0 14px 34px -10px rgba(0, 0, 0, 0.7), 0 0 16px rgba(200, 164, 90, 0.08);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(200, 164, 90, 0.08);
 }
 
-.spec-card__num {
+.metric-card__num {
   font-family: var(--font-heading);
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
   color: var(--color-gold);
-  font-weight: 500;
+  line-height: 1;
 }
 
-.spec-card__title {
+.metric-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.metric-card__title {
   font-family: var(--font-heading);
-  font-size: 0.88rem;
-  letter-spacing: var(--ls-nav);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-text);
-  font-weight: 500;
 }
 
-.spec-card__desc {
-  font-size: 0.85rem;
+.metric-card__subtitle {
+  font-size: 0.82rem;
+  line-height: 1.65;
   color: var(--color-text-muted);
-  line-height: 1.7;
 }
 
-.collection__cta-wrap {
-  margin-top: 8px;
-}
-
-.collection__cta {
-  padding: 0.85em 2.2em;
-  font-size: 0.72rem;
+@media (max-width: 768px) {
+  .collection__metrics {
+    grid-template-columns: 1fr;
+  }
 }
    12. FEEDBACK / FORM
    ============================================================ */
@@ -1148,7 +1168,7 @@ ul, ol {
     height: 60px;
   }
 
-  .collection__specs {
+  .collection__metrics {
     grid-template-columns: 1fr;
   }
 
