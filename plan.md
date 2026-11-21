@@ -129,8 +129,8 @@ Navbar (Sticky + Blur)
 - [x] Brand logo placed at `assets/logo.jpg`.
 
 ### Step 2: Content Customization in `config.js`
-- [ ] Update Instagram URL and handle (`@seekthelight`).
-- [ ] Update contact email address (`hello@seekthelight.com`).
+- [x] Contact email set to `wbelieve2027@gmail.com`.
+- [x] Social links clean (no placeholder Instagram handle).
 - [ ] When ready, swap product image paths from `image: null` to real paths in `/assets/products/`.
 
 ### Step 3: Deployment

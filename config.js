@@ -13,9 +13,7 @@ const CONFIG = {
   brand: {
     name: "SEEK THE LIGHT",
     tagline: "We Believe",
-    email: "hello@seekthelight.com",           // ← replace with real email
-    instagram: "@seekthelight",                 // ← replace with real handle
-    instagramUrl: "https://instagram.com/seekthelight", // ← replace with real URL
+    email: "wbelieve2027@gmail.com",
     copyright: "© 2025 SEEK THE LIGHT. All rights reserved.",
   },
 

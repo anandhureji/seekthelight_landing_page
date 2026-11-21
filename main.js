@@ -73,23 +73,12 @@ function populateConfig() {
   if (incentLabel) incentLabel.textContent  = feedback.incentiveLabel;
   if (incentVal)   incentVal.textContent    = feedback.incentive;
 
-  // Community / Instagram
-  const igLink   = $('#instagram-link');
-  const igHandle = $('#instagram-handle');
-  if (igLink)   igLink.href          = brand.instagramUrl;
-  if (igHandle) igHandle.textContent = brand.instagram;
-
   // Footer
   const footerEmail = $('#footer-email');
-  const footerIg    = $('#footer-ig');
   const footerCopy  = $('#footer-copyright');
   if (footerEmail) {
     footerEmail.href        = `mailto:${brand.email}`;
     footerEmail.textContent = brand.email;
-  }
-  if (footerIg) {
-    footerIg.href        = brand.instagramUrl;
-    footerIg.textContent = brand.instagram;
   }
   if (footerCopy) footerCopy.textContent = brand.copyright;
 }
