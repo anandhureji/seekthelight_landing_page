@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0B0B0B" />
+
+  <!-- ═══════════════════════════════════════════════════════
+       SEO & META
+  ═══════════════════════════════════════════════════════ -->
+  <title>SEEK THE LIGHT — Coming Soon</title>
+  <meta name="description" content="Streetwear for people who keep moving. SEEK THE LIGHT is coming soon. Preview the first collection and shape the brand — your voice matters." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://seekthelight.com/" />
+  <meta property="og:title"       content="SEEK THE LIGHT — Coming Soon" />
+  <meta property="og:description" content="Streetwear for people who keep moving. Preview our first collection and shape the brand." />
+  <meta property="og:image"       content="/assets/logo.jpg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="SEEK THE LIGHT — Coming Soon" />
+  <meta name="twitter:description" content="Streetwear for people who keep moving. Preview our first collection and shape the brand." />
+  <meta name="twitter:image"       content="/assets/logo.jpg" />
+
+  <!-- Favicon (place logo.ico or logo.png in /assets/) -->
+  <link rel="icon" type="image/jpeg" href="/assets/logo.jpg" />
+  <link rel="apple-touch-icon"      href="/assets/logo.jpg" />
+
+  <!-- ═══════════════════════════════════════════════════════
+       FONTS  — Jost (headings) + Inter (body)
+  ═══════════════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ═══════════════════════════════════════════════════════
+       ANALYTICS PLACEHOLDER
+       Uncomment and set CONFIG.analytics.enabled = true
+       in config.js to activate.
+
+  <!-- GA4 (paste snippet here when ready)
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <!-- Plausible (paste snippet here when ready)
+  <script defer data-domain="seekthelight.com"
+    src="https://plausible.io/js/script.js"></script>
+  -->
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       CURSOR GLOW  (follows mouse on desktop)
+  ═══════════════════════════════════════════════════════ -->
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       1. NAVBAR
+  ═══════════════════════════════════════════════════════ -->
+  <header class="navbar" role="banner">
+    <a href="#hero" class="navbar__wordmark" aria-label="SEEK THE LIGHT — home">
+      SEEK THE L<span class="glow-i" aria-hidden="true">I</span><span class="sr-only">I</span>GHT
+    </a>
+
+    <nav class="navbar__nav" aria-label="Main navigation">
+      <a href="#story"      class="navbar__link">Story</a>
+      <a href="#collection" class="navbar__link">Collection</a>
+      <a href="#feedback"   class="navbar__link">Feedback</a>
+      <a href="#feedback"   class="btn btn--gold navbar__cta">Join Early Access</a>
+    </nav>
+
+    <button class="navbar__burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+    <button class="mobile-menu__close" aria-label="Close menu">✕</button>
+    <nav>
+      <a href="#story"      class="mobile-menu__link">Story</a>
+      <a href="#collection" class="mobile-menu__link">Collection</a>
+      <a href="#feedback"   class="mobile-menu__link">Feedback</a>
+      <a href="#feedback"   class="btn btn--gold mobile-menu__cta">Join Early Access</a>
+    </nav>
+  </div>
+  <div class="mobile-menu__overlay" aria-hidden="true"></div>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       2. HERO
+  ═══════════════════════════════════════════════════════ -->
+  <section id="hero" class="hero" aria-label="Hero">
+    <div class="hero__inner">
+      <h1 class="hero__wordmark" aria-label="SEEK THE LIGHT">
+        SEEK THE L<span class="glow-i hero__glow-i" aria-hidden="true">I</span><span class="sr-only">I</span>GHT
+      </h1>
+      <p class="hero__tagline">We Believe</p>
+      <a href="#feedback" class="btn btn--gold hero__cta">Join Early Access</a>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="hero__scroll-cue" aria-hidden="true">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-label">scroll</span>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       3. BRAND STORY
+  ═══════════════════════════════════════════════════════ -->
+  <section id="story" class="section story" aria-labelledby="story-heading">
+    <div class="container story__inner">
+
+      <div class="section__label" aria-hidden="true">— The Story</div>
+      <h2 id="story-heading" class="story__heading">
+        SEEK THE L<span class="glow-i" aria-hidden="true">I</span><span class="sr-only">I</span>GHT
+      </h2>
+
+      <div class="story__body">
+        <!-- Paragraphs rendered by JS from config -->
+      </div>
+
+      <div class="story__divider" aria-hidden="true"></div>
+
+      <blockquote class="story__pullquote">
+        <p>Seek the light.<br>Wear the journey.</p>
+      </blockquote>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       4. COLLECTION PREVIEW
+  ═══════════════════════════════════════════════════════ -->
+  <section id="collection" class="section collection" aria-labelledby="collection-heading">
+    <div class="container">
+
+      <div class="section__label" aria-hidden="true">— First Collection</div>
+      <h2 id="collection-heading" class="section__heading">COMING SOON</h2>
+      <p class="section__sub">Preview the pieces. Tell us what you'd wear.</p>
+
+      <!-- Product cards rendered by JS from config -->
+      <div class="product-grid" id="product-grid" role="list"></div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       5. FEEDBACK & EARLY ACCESS
+  ═══════════════════════════════════════════════════════ -->
+  <section id="feedback" class="section feedback" aria-labelledby="feedback-heading">
+    <div class="container feedback__inner">
+
+      <div class="section__label" aria-hidden="true">— Early Access</div>
+      <h2 id="feedback-heading" class="section__heading feedback__heading"></h2>
+      <p class="feedback__body"></p>
+
+      <div class="feedback__incentive">
+        <span class="feedback__incentive-label"></span>
+        <span class="feedback__incentive-value"></span>
+      </div>
+
+      <!-- Custom branded form — wired to Google Forms in background -->
+      <div id="stl-form" aria-label="Feedback and early access form">
+        <!-- Rendered by form.js -->
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       6. SOCIAL & COMMUNITY
+  ═══════════════════════════════════════════════════════ -->
+  <section id="community" class="section community" aria-labelledby="community-heading">
+    <div class="container community__inner">
+
+      <div class="section__label" aria-hidden="true">— Community</div>
+      <h2 id="community-heading" class="section__heading">FOLLOW THE JOURNEY</h2>
+      <p class="community__sub">We're documenting the build in real time. Follow along, ask questions, and be part of what comes next.</p>
+
+      <a id="instagram-link" href="" target="_blank" rel="noopener noreferrer" class="community__ig-link" aria-label="Follow us on Instagram">
+        <svg class="community__ig-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+        </svg>
+        <span id="instagram-handle" class="community__ig-handle"></span>
+      </a>
+
+      <!-- Future photo strip placeholder -->
+      <div class="community__photo-strip" aria-label="Photo strip — coming soon">
+        <div class="photo-strip__placeholder">
+          <span>Photo strip coming soon</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       7. FAQ
+  ═══════════════════════════════════════════════════════ -->
+  <section id="faq" class="section faq" aria-labelledby="faq-heading">
+    <div class="container">
+
+      <div class="section__label" aria-hidden="true">— Questions</div>
+      <h2 id="faq-heading" class="section__heading">FAQ</h2>
+
+      <!-- FAQ items rendered by JS from config -->
+      <dl class="faq__list" id="faq-list"></dl>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       8. FOOTER
+  ═══════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+
+      <div class="footer__wordmark">
+        SEEK THE L<span class="glow-i" aria-hidden="true">I</span><span class="sr-only">I</span>GHT
+      </div>
+
+      <div class="footer__columns">
+
+        <div class="footer__col">
+          <p class="footer__col-label">Contact</p>
+          <a id="footer-email" href="" class="footer__link"></a>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__col-label">Follow</p>
+          <a id="footer-ig" href="" target="_blank" rel="noopener noreferrer" class="footer__link"></a>
+        </div>
+
+        <div class="footer__col footer__col--wide">
+          <p class="footer__privacy">
+            We only use your email and responses to improve the brand and notify you of the launch. We will never sell your data or add you to unrelated lists.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p id="footer-copyright" class="footer__copyright"></p>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#story"      class="footer__nav-link">Story</a>
+          <a href="#collection" class="footer__nav-link">Collection</a>
+          <a href="#feedback"   class="footer__nav-link">Early Access</a>
+          <a href="#faq"        class="footer__nav-link">FAQ</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════════════════════ -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
