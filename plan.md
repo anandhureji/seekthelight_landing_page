@@ -82,7 +82,7 @@ Navbar (Sticky + Blur)
   - `pageHistory=0,1,2,3,4`
   - Dynamic `fbzx` CSRF token
 
-### Field ID Mapping (21 Questions Across 5 Sections)
+### Field ID Mapping (20 Questions Across 5 Sections)
 
 | Step | Field Label | Question Type | Entry ID | Validation |
 |---|---|---|---|---|
@@ -93,20 +93,19 @@ Navbar (Sticky + Blur)
 | | District in Kerala | Dropdown | `entry.1391941207` | Required |
 | **Step 2: Shopping Behaviour** | Interests & lifestyle | Radio | `entry.1898789881` | Optional |
 | | T-shirt purchase frequency | Radio | `entry.1731138509` | Required |
-| | Usual spend per T-shirt | Radio | `entry.988806588` | Required |
+| | Spend per T-shirt | Radio | `entry.988806588` | Required |
 | | Where you buy T-shirts | Checkbox + Other | `entry.155074726` | Required |
 | | Recent brands purchased | Text | `entry.224987114` | Optional |
-| **Step 3: Design & Colours** | Which T-Shirt design style do you prefer? | Radio | `entry.739911614` | Optional |
-| | Attractive design categories | Checkbox + Other | `entry.596003593` | Required (Max 3) |
+| **Step 3: Design, Colours & Print** | Which T-Shirt design style do you prefer? | Radio | `entry.739911614` | Optional |
+| | Design categories | Checkbox + Other | `entry.596003593` | Required (Max 3) |
 | | Graphic placement preference | Radio | `entry.1137595705` | Optional |
 | | Colours you would buy | Checkbox + Other | `entry.1360660877` | Required (Max 4) |
 | | Print/decoration styles | Checkbox | `entry.2051225245` | Optional |
-| | What matters most in print | Radio | `entry.205500098` | Optional |
 | **Step 4: Fit & Fabric** | T-shirt fit preference | Radio | `entry.1358416048` | Required |
 | | Fabric weight preference | Radio | `entry.977780200` | Optional |
 | **Step 5: Pricing & Drivers** | Top 3 purchase factors | Checkbox | `entry.1764931093` | Required (Max 3) |
-| | Willingness to pay (oversized) | Radio | `entry.642821210` | Optional |
-| | What you want to see | Textarea | `entry.1364478885` | Optional |
+| | How much willing to pay (oversized) | Radio | `entry.642821210` | Optional |
+| | What you want to see in a new brand | Textarea | `entry.1364478885` | Optional |
 
 ---
 
@@ -125,8 +124,7 @@ Navbar (Sticky + Blur)
 ## 6. Pre-Launch Action Items (Next Steps)
 
 ### Step 1: Asset Placement
-- [ ] Place brand logo image at `c:\seekthelight\assets\logo.jpg` (used automatically for favicon and Open Graph preview).
-- [ ] Sample the exact gold color from the logo and update `--color-gold` in `style.css` `:root` if needed.
+- [x] Brand logo placed at `assets/logo.jpg`.
 
 ### Step 2: Content Customization in `config.js`
 - [ ] Update Instagram URL and handle (`@seekthelight`).
@@ -134,10 +132,6 @@ Navbar (Sticky + Blur)
 - [ ] When ready, swap product image paths from `image: null` to real paths in `/assets/products/`.
 
 ### Step 3: Deployment
-- [ ] **Option A (Netlify):** Drag & drop the `c:\seekthelight` folder into [app.netlify.com/drop](https://app.netlify.com/drop).
-- [ ] **Option B (Vercel):** Push to GitHub and import into Vercel with zero configuration.
+- [ ] **Option A (Vercel):** Run `npx vercel` in terminal or connect your GitHub repo at vercel.com.
+- [ ] **Option B (Netlify):** Drag & drop the `c:\seekthelight` folder into [app.netlify.com/drop](https://app.netlify.com/drop).
 - [ ] **Option C (GitHub Pages):** Push to a GitHub repo and activate Pages in repository settings.
-
-### Step 4: Analytics (Optional)
-- [ ] Paste Google Analytics 4 or Plausible snippet into the marked slot in `index.html`.
-- [ ] Set `analytics.enabled = true` in `config.js`.
