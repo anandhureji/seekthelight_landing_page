@@ -1306,13 +1306,14 @@ ul, ol {
 /* ── Wrapper ────────────────────────────────────────────────── */
 .stlf {
   width: 100%;
-  background: #0F0F0F;
-  border: 1px solid var(--color-border);
-  border-radius: 2px;
+  background: #0E0E0E;
+  border: 1px solid #222222;
+  border-radius: 3px;
   padding: clamp(28px, 5vw, 52px);
   display: flex;
   flex-direction: column;
   gap: 32px;
+  box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(200, 164, 90, 0.10);
 }
 
 /* ── Progress bar ───────────────────────────────────────────── */
@@ -1323,8 +1324,8 @@ ul, ol {
 }
 
 .stlf__progress-track {
-  height: 1px;
-  background: var(--color-border);
+  height: 2px;
+  background: #1D1D1D;
   border-radius: 2px;
   overflow: hidden;
 }
@@ -1333,6 +1334,7 @@ ul, ol {
   height: 100%;
   background: linear-gradient(90deg, var(--color-gold-dim), var(--color-gold));
   border-radius: 2px;
+  box-shadow: 0 0 10px rgba(200, 164, 90, 0.45);
   transition: width 0.5s var(--ease);
 }
 
@@ -1427,16 +1429,18 @@ ul, ol {
 /* ── Text / Email / Textarea inputs ─────────────────────────── */
 .stlf__input {
   width: 100%;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid #242424;
   border-radius: 2px;
-  padding: 12px 16px;
+  padding: 13px 16px;
   font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 300;
   color: var(--color-text);
-  transition: border-color var(--dur) var(--ease),
-              background var(--dur) var(--ease);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: border-color 0.25s var(--ease),
+              background 0.25s var(--ease),
+              box-shadow 0.25s var(--ease);
   appearance: none;
 }
 
@@ -1446,8 +1450,9 @@ ul, ol {
 
 .stlf__input:focus {
   outline: none;
-  border-color: var(--color-gold-dim);
+  border-color: var(--color-gold);
   background: rgba(200, 164, 90, 0.04);
+  box-shadow: 0 0 0 1px rgba(200, 164, 90, 0.35), 0 0 16px rgba(200, 164, 90, 0.08);
 }
 
 .stlf__input:focus-visible {
@@ -1457,7 +1462,7 @@ ul, ol {
 
 .stlf__textarea {
   resize: vertical;
-  min-height: 100px;
+  min-height: 105px;
   line-height: 1.6;
 }
 
@@ -1468,21 +1473,23 @@ ul, ol {
 
 .stlf__select {
   width: 100%;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid #242424;
   border-radius: 2px;
-  padding: 12px 40px 12px 16px;
+  padding: 13px 40px 13px 16px;
   font-family: var(--font-body);
   font-size: 0.9rem;
   color: var(--color-text);
   appearance: none;
   cursor: pointer;
-  transition: border-color var(--dur) var(--ease);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease);
 }
 
 .stlf__select:focus {
   outline: none;
-  border-color: var(--color-gold-dim);
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 1px rgba(200, 164, 90, 0.35), 0 0 16px rgba(200, 164, 90, 0.08);
 }
 
 .stlf__select:focus-visible {
@@ -1500,7 +1507,7 @@ ul, ol {
   right: 14px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--color-gold-dim);
+  color: var(--color-gold);
   font-size: 0.7rem;
   pointer-events: none;
 }
@@ -1509,7 +1516,7 @@ ul, ol {
 .stlf__options {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 9px;
 }
 
 .stlf__opt {
@@ -1519,31 +1526,40 @@ ul, ol {
 
 .stlf__opt-pill {
   display: block;
-  padding: 8px 14px;
+  padding: 9px 15px;
   font-family: var(--font-heading);
   font-size: 0.68rem;
   font-weight: 400;
   letter-spacing: 0.08em;
   text-transform: none;
-  color: var(--color-text-muted);
-  border: 1px solid var(--color-border);
+  color: #A59F93;
+  border: 1px solid #282828;
   border-radius: 2px;
-  background: transparent;
-  transition: all var(--dur) var(--ease);
+  background: rgba(255, 255, 255, 0.025);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  transition: border-color 0.2s var(--ease),
+              background 0.2s var(--ease),
+              color 0.2s var(--ease),
+              box-shadow 0.2s var(--ease),
+              transform 0.2s var(--ease);
   user-select: none;
   line-height: 1.4;
 }
 
 .stlf__opt:hover .stlf__opt-pill {
   border-color: var(--color-gold-dim);
+  background: rgba(255, 255, 255, 0.05);
   color: var(--color-text);
+  transform: translateY(-1px);
 }
 
-/* Selected state */
+/* Selected state — 10/10 signature gold glow */
 .stlf__opt.selected .stlf__opt-pill {
   border-color: var(--color-gold);
-  background: rgba(200, 164, 90, 0.10);
-  color: var(--color-gold);
+  background: rgba(200, 164, 90, 0.16);
+  color: #FAF6EE;
+  font-weight: 500;
+  box-shadow: 0 0 14px rgba(200, 164, 90, 0.18), inset 0 0 0 1px rgba(200, 164, 90, 0.22);
 }
 
 /* Disabled state (max checkbox selections reached) */
@@ -1552,11 +1568,13 @@ ul, ol {
 }
 
 .stlf__opt.disabled .stlf__opt-pill {
-  opacity: 0.28;
+  opacity: 0.22;
   cursor: not-allowed;
-  border-color: var(--color-border);
+  border-color: #1A1A1A;
   color: var(--color-text-muted);
   background: transparent;
+  box-shadow: none;
+  transform: none;
 }
 
 /* Focus ring on hidden input bubbles up to pill */
@@ -1586,10 +1604,15 @@ ul, ol {
 
 /* ── Inline error message ───────────────────────────────────── */
 .stlf__error {
-  font-size: 0.75rem;
-  color: #c47a5a;
-  min-height: 1em;
+  font-size: 0.76rem;
+  color: #D4886A;
+  min-height: 1.1em;
   letter-spacing: 0.02em;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.2s ease;
 }
 
 /* ── Navigation ─────────────────────────────────────────────── */
@@ -1598,19 +1621,32 @@ ul, ol {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding-top: 8px;
-  border-top: 1px solid var(--color-border);
+  padding-top: 14px;
+  border-top: 1px solid #1F1F1F;
 }
 
 .stlf__back {
   font-size: 0.7rem;
-  padding: 0.65em 1.4em;
+  padding: 0.7em 1.6em;
+  border-color: #282828;
+  color: var(--color-text-muted);
+}
+
+.stlf__back:hover {
+  border-color: var(--color-gold-dim);
+  color: var(--color-text);
 }
 
 .stlf__advance {
   font-size: 0.7rem;
-  padding: 0.65em 1.8em;
+  padding: 0.7em 2em;
   margin-left: auto;
+  box-shadow: 0 2px 12px rgba(200, 164, 90, 0.18);
+}
+
+.stlf__advance:hover {
+  box-shadow: 0 4px 20px rgba(200, 164, 90, 0.35);
+  transform: translateY(-1px);
 }
 
 /* ── Loading / Success states ───────────────────────────────── */
