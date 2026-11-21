@@ -43,12 +43,14 @@ Navbar (Sticky + Blur)
 ├── Vertical gold light divider
 └── Pull-quote: "Seek the light. Wear the journey."
 
-[Collection Preview]
-├── 6 Product Cards (Coming Soon)
-│   ├── CSS-styled dark numbered placeholders (swappable for real photos)
-│   ├── Product name, description, and price range
-│   └── Reaction control ("Would you buy this?" -> Yes / Maybe / No)
-└── Client-side state persistence in localStorage
+[Collection 001 — In Development]
+├── Status badge: "[ In Prototyping ]"
+├── Editorial manifesto: limited release, heavyweight craft, community-engineered
+├── 3 Core Specifications:
+│   ├── 01 / Limited Release (curated small-batch, zero overproduction)
+│   ├── 02 / Heavyweight Craft (custom heavyweight cotton, relaxed drape)
+│   └── 03 / Community Engineered (direct output of community survey answers)
+└── Direct CTA: "Shape Collection 001 Below ↓" -> leads directly into survey
 
 [Feedback & Early Access]
 ├── Value proposition & incentive ("Early access + launch discount")
