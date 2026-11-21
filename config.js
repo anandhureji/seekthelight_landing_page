@@ -89,14 +89,14 @@ const CONFIG = {
   ],
 
   /* ----------------------------------------------------------
-   *  FEEDBACK / EARLY ACCESS SECTION
+   *  FEEDBACK SECTION
    * ---------------------------------------------------------- */
   feedback: {
     heading: "YOUR VOICE SHAPES WHAT COMES NEXT",
     body: "SEEK THE LIGHT is being built with the people who'll wear it. Tell us what you think — what you'd buy, what you'd change, and what you're looking for in a brand like this.",
-    incentive: "Early access + 20% off at launch",
-    incentiveLabel: "What you get:",
-    ctaLabel: "Give Feedback / Join Early Access",
+    incentive: "20% off at launch",
+    incentiveLabel: "Launch incentive:",
+    ctaLabel: "Give Feedback",
   },
 
   /* ----------------------------------------------------------

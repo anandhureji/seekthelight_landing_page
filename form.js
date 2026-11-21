@@ -776,8 +776,8 @@ class MultiStepForm {
         <div class="stlf__success-mark" aria-hidden="true">✦</div>
         <h3 class="stlf__success-title">Thank You</h3>
         <p class="stlf__success-body">
-          Your response has been received. You're on our early-access list —
-          we'll reach out before launch with your discount and a first look at the collection.
+          Your response has been received. Thank you for shaping SEEK THE LIGHT —
+          we'll reach out before launch with your launch discount and a first look at the collection.
         </p>
         <p class="stlf__success-sub">Seek the light. Wear the journey.</p>
       </div>`;
