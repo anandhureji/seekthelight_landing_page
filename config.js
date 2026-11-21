@@ -31,14 +31,9 @@ const CONFIG = {
     heading: "SEEK THE LIGHT",
     paragraphs: [
       "We believe clothing is more than what we wear. It is an expression of who we are.",
-      "SEEK THE LIGHT was born from a belief in individuality, creativity and the courage to find your own path.",
-      "In a world constantly chasing trends, we choose a different direction — one that values simplicity, quality and purpose.",
       "Our vision is to create contemporary clothing that speaks through its design, not through excess. From carefully considered silhouettes and premium fabrics to meaningful artwork and subtle details, every element has a purpose.",
-      "We draw inspiration from everyday life, art, culture and the individuality of people. We believe in creating pieces that are effortless to wear, distinctive in character and timeless in appeal.",
-      "Starting in South India, our ambition is to build a clothing label that connects with people beyond borders.",
       "We are not defined by trends. We are defined by what we believe in.",
     ],
-    pullQuote: "Seek the light. Wear the journey.",
   },
 
   /* ----------------------------------------------------------
