@@ -94,8 +94,6 @@ const CONFIG = {
   feedback: {
     heading: "YOUR VOICE SHAPES WHAT COMES NEXT",
     body: "SEEK THE LIGHT is being built with the people who'll wear it. Tell us what you think — what you'd buy, what you'd change, and what you're looking for in a brand like this.",
-    incentive: "20% off at launch",
-    incentiveLabel: "Launch incentive:",
     ctaLabel: "Give Feedback",
   },
 
@@ -105,7 +103,7 @@ const CONFIG = {
   faq: [
     {
       q: "When does SEEK THE LIGHT launch?",
-      a: "We're targeting a launch in early 2025. Sign up below to be notified the moment we go live — early-access members hear first.",
+      a: "We're targeting a launch in 2025. Follow our progress and share your thoughts in the survey below.",
     },
     {
       q: "Where do you ship?",
@@ -117,7 +115,7 @@ const CONFIG = {
     },
     {
       q: "What are the price points?",
-      a: "We're aiming for quality-first pricing — expect hoodies from £85, tees from £45, and outerwear from £145. Early-access members get 20% off their first order.",
+      a: "We're aiming for quality-first pricing — focused on heavyweight fabrics, clean silhouettes, and durability.",
     },
     {
       q: "How is my feedback used?",

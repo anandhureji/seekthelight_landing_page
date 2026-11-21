@@ -64,14 +64,10 @@ function populateConfig() {
   }
 
   // Feedback section
-  const fhHeading  = $('.feedback__heading');
-  const fbBody     = $('.feedback__body');
-  const incentLabel = $('.feedback__incentive-label');
-  const incentVal   = $('.feedback__incentive-value');
-  if (fhHeading)   fhHeading.textContent   = feedback.heading;
-  if (fbBody)      fbBody.textContent       = feedback.body;
-  if (incentLabel) incentLabel.textContent  = feedback.incentiveLabel;
-  if (incentVal)   incentVal.textContent    = feedback.incentive;
+  const fhHeading = $('.feedback__heading');
+  const fbBody    = $('.feedback__body');
+  if (fhHeading) fhHeading.textContent = feedback.heading;
+  if (fbBody)    fbBody.textContent    = feedback.body;
 
   // Footer
   const footerEmail = $('#footer-email');
