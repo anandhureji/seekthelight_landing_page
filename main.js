@@ -57,8 +57,15 @@ function populateConfig() {
   // Brand story paragraphs
   const storyBody = $('.story__body');
   if (storyBody) {
-    story.paragraphs.forEach(text => {
-      const p = el('p', {}, text);
+    storyBody.innerHTML = '';
+    story.paragraphs.forEach((text, index) => {
+      let className = 'story__p';
+      if (index === 0) {
+        className += ' story__p--lead';
+      } else if (index === story.paragraphs.length - 1) {
+        className += ' story__p--closing';
+      }
+      const p = el('p', { class: className }, text);
       storyBody.appendChild(p);
     });
   }
