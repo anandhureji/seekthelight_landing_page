@@ -644,227 +644,108 @@ ul, ol {
 
 
 /* ============================================================
-   11. COLLECTION / PRODUCT GRID
+   11. COLLECTION 001 — IN DEVELOPMENT
    ============================================================ */
 .collection {
   background: var(--color-bg);
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
-  gap: var(--gap);
-}
-
-/* Product card */
-.product-card {
-  position: relative;
+.collection__inner {
   display: flex;
   flex-direction: column;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: 2px;
-  overflow: hidden;
-  transition: border-color var(--dur) var(--ease),
-              transform var(--dur) var(--ease);
+  gap: clamp(24px, 4vw, 36px);
 }
 
-.product-card:hover {
-  border-color: var(--color-gold-dim);
-  transform: translateY(-2px);
-}
-
-/* Image / placeholder */
-.product-card__img-wrap {
-  position: relative;
-  aspect-ratio: 3 / 4;
-  overflow: hidden;
-  background: #111;
-}
-
-.product-card__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity 0.6s var(--ease);
-}
-
-/* CSS placeholder (shown when image is null) */
-.product-card__placeholder {
-  position: absolute;
-  inset: 0;
+.collection__header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  background: #0F0F0F;
-  border-bottom: 1px solid var(--color-border);
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
-.product-card__placeholder-label {
-  font-family: var(--font-heading);
-  font-size: 0.6rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
-  opacity: 0.6;
+.collection__header .section__heading {
+  margin-bottom: 0;
 }
 
-.product-card__placeholder-num {
+.collection__badge {
   font-family: var(--font-heading);
-  font-size: 2.4rem;
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  color: var(--color-gold-dim);
-  opacity: 0.4;
-}
-
-.product-card__coming-soon {
-  font-family: var(--font-heading);
-  font-size: 0.55rem;
-  letter-spacing: 0.3em;
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--color-gold);
   border: 1px solid var(--color-gold-dim);
-  padding: 4px 10px;
-  opacity: 0.7;
+  padding: 4px 12px;
+  border-radius: 2px;
+  background: rgba(200, 164, 90, 0.08);
 }
 
-/* Card body */
-.product-card__body {
-  padding: 20px;
+.collection__manifesto {
+  font-size: clamp(1rem, 2.2vw, 1.15rem);
+  color: var(--color-text);
+  font-weight: 300;
+  line-height: 1.85;
+  max-width: 780px;
+  opacity: 0.9;
+}
+
+.collection__specs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--gap);
+  margin-top: 8px;
+}
+
+.spec-card {
+  background: #0E0E0E;
+  border: 1px solid #222222;
+  border-radius: 2px;
+  padding: clamp(26px, 4vw, 36px);
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  flex: 1;
+  gap: 12px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  transition: border-color var(--dur) var(--ease),
+              transform var(--dur) var(--ease),
+              box-shadow var(--dur) var(--ease);
 }
 
-.product-card__name {
+.spec-card:hover {
+  border-color: var(--color-gold-dim);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px -10px rgba(0, 0, 0, 0.7), 0 0 16px rgba(200, 164, 90, 0.08);
+}
+
+.spec-card__num {
   font-family: var(--font-heading);
   font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--color-gold);
   font-weight: 500;
+}
+
+.spec-card__title {
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
   letter-spacing: var(--ls-nav);
   text-transform: uppercase;
   color: var(--color-text);
-}
-
-.product-card__desc {
-  font-size: 0.82rem;
-  color: var(--color-text-muted);
-  line-height: 1.6;
-}
-
-.product-card__price {
-  font-family: var(--font-heading);
-  font-size: 0.7rem;
-  font-weight: 400;
-  letter-spacing: 0.08em;
-  color: var(--color-gold-dim);
-  margin-top: 4px;
-}
-
-/* Reaction control */
-.product-card__reaction {
-  padding: 16px 20px;
-  border-top: 1px solid var(--color-border);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.product-card__reaction-label {
-  font-family: var(--font-heading);
-  font-size: 0.6rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
-}
-
-.product-card__reaction-btns {
-  display: flex;
-  gap: 8px;
-}
-
-.reaction-btn {
-  flex: 1;
-  padding: 6px 4px;
-  font-family: var(--font-heading);
-  font-size: 0.6rem;
   font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+}
+
+.spec-card__desc {
+  font-size: 0.85rem;
   color: var(--color-text-muted);
-  border: 1px solid var(--color-border);
-  border-radius: 2px;
-  background: transparent;
-  transition: all var(--dur) var(--ease);
-  cursor: pointer;
+  line-height: 1.7;
 }
 
-.reaction-btn:hover {
-  border-color: var(--color-gold-dim);
-  color: var(--color-text);
+.collection__cta-wrap {
+  margin-top: 8px;
 }
 
-.reaction-btn.active-yes {
-  background: rgba(200, 164, 90, 0.15);
-  border-color: var(--color-gold);
-  color: var(--color-gold);
+.collection__cta {
+  padding: 0.85em 2.2em;
+  font-size: 0.72rem;
 }
-
-.reaction-btn.active-maybe {
-  background: rgba(200, 164, 90, 0.08);
-  border-color: var(--color-gold-dim);
-  color: var(--color-gold-dim);
-}
-
-.reaction-btn.active-no {
-  background: rgba(100, 90, 80, 0.12);
-  border-color: #4a4238;
-  color: #6b5f50;
-}
-
-/* Thank-you state */
-.product-card__thankyou {
-  display: none;
-  flex-direction: column;
-  gap: 6px;
-  padding: 16px 20px;
-  border-top: 1px solid var(--color-border);
-}
-
-.product-card__thankyou.visible {
-  display: flex;
-}
-
-.product-card__reaction.voted {
-  display: none;
-}
-
-.thankyou-msg {
-  font-family: var(--font-heading);
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--color-gold);
-}
-
-.thankyou-more {
-  font-size: 0.75rem;
-  color: var(--color-text-muted);
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  transition: color var(--dur), text-decoration-color var(--dur);
-}
-
-.thankyou-more:hover {
-  color: var(--color-gold);
-  text-decoration-color: var(--color-gold-dim);
-}
-
-
-/* ============================================================
    12. FEEDBACK / FORM
    ============================================================ */
 .feedback {
@@ -1267,7 +1148,7 @@ ul, ol {
     height: 60px;
   }
 
-  .product-grid {
+  .collection__specs {
     grid-template-columns: 1fr;
   }
 

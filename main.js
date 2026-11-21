@@ -372,9 +372,10 @@ function initScrollReveal() {
     { threshold: 0.12 }
   );
 
-  // Observe story paragraphs, section headings, product cards, FAQ items
+  // Observe story paragraphs, section headings, collection specs, FAQ items
   $$('.reveal, .story__body p, .story__heading, .story__pullquote,' +
      '.section__label, .section__heading, .section__sub,' +
+     '.collection__manifesto, .spec-card,' +
      '.community__ig-link, .faq__item').forEach(el => {
     el.classList.add('reveal');
     observer.observe(el);
@@ -423,7 +424,6 @@ function initSmoothScroll() {
 
 document.addEventListener('DOMContentLoaded', () => {
   populateConfig();   // Fill in config-driven content first
-  renderProducts();   // Build product grid
   renderFaq();        // Build FAQ accordion
   initForm();         // Build custom multi-step form → Google Forms
   initNavbar();       // Nav scroll + mobile menu
