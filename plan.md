@@ -96,7 +96,7 @@ Navbar (Sticky + Blur)
 | | Usual spend per T-shirt | Radio | `entry.988806588` | Required |
 | | Where you buy T-shirts | Checkbox + Other | `entry.155074726` | Required |
 | | Recent brands purchased | Text | `entry.224987114` | Optional |
-| **Step 3: Design & Colours** | Overall design style | Radio | `entry.739911614` | Optional |
+| **Step 3: Design & Colours** | Which T-Shirt design style do you prefer? | Radio | `entry.739911614` | Optional |
 | | Attractive design categories | Checkbox + Other | `entry.596003593` | Required (Max 3) |
 | | Graphic placement preference | Radio | `entry.1137595705` | Optional |
 | | Colours you would buy | Checkbox + Other | `entry.1360660877` | Required (Max 4) |

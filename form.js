@@ -146,7 +146,7 @@ const STEPS = [
     fields: [
       {
         id: 'entry.739911614',
-        label: 'Which overall design style do you prefer?',
+        label: 'Which T-Shirt design style do you prefer?',
         hint: 'Optional',
         type: 'radio',
         required: false,
