@@ -32,6 +32,7 @@ const CONFIG = {
     paragraphs: [
       "We believe clothing is more than what we wear. It is an expression of who we are.",
       "Our vision is to create contemporary clothing that speaks through its design, not through excess. From carefully considered silhouettes and premium fabrics to meaningful artwork and subtle details, every element has a purpose.",
+      "We draw inspiration from everyday life, art, culture and the individuality of people. We believe in creating pieces that are effortless to wear, distinctive in character and timeless in appeal.",
       "We are not defined by trends. We are defined by what we believe in.",
     ],
   },
